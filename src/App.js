@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
+import LandingPage from './components/containers/LandingPage';
+import WhatsPoppular from './components/containers/WhatsPoppular';
+import FreeToWatch from './components/containers/FreeToWatch';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar></Navbar>
+      <LandingPage></LandingPage>
+      <WhatsPoppular></WhatsPoppular>
+      <FreeToWatch></FreeToWatch>
     </div>
   );
 }
